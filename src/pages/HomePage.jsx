@@ -7,7 +7,7 @@ import { useCart } from "../contexts/CartContext";
 import { useChat } from "../contexts/ChatContext";
 import { FiShoppingCart } from "react-icons/fi";
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 8;
 
 const SkeletonCard = () => (
   <div className="group relative bg-white dark:bg-gray-800 rounded-lg animate-pulse flex flex-col">
