@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate, useLocation  } from "react-router-dom";
 import { FiGrid, FiShoppingCart, FiUser } from "react-icons/fi";
 import { useCart } from "../contexts/CartContext";
+import logo from '/logo.svg'; 
 
 //базовый класс для пунктов меню
 const base =
@@ -64,7 +65,7 @@ const NavigationBar = () => {
             aria-label="Главная"
           >
             <img
-              src="/logo.svg"
+              src={logo}
               alt="Главная"
               className="h-5 w-auto"
               loading="eager"
