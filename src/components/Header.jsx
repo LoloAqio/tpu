@@ -7,6 +7,7 @@ import { FiSearch, FiShoppingCart, FiUser, FiMoon, FiSun } from "react-icons/fi"
 import { useCart } from "../contexts/CartContext";
 import { useChat } from "../contexts/ChatContext";
 import { useTheme } from "../contexts/ThemeContext";
+import logo from '/logo.svg'; 
 
 const Header = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -232,11 +233,7 @@ const Header = () => {
               onClick={goHome}
               className="focus:outline-none hover:opacity-80 transition-opacity cursor-pointer"
             >
-              <img
-                src="/logo.svg"
-                alt="Marketplace"
-                className="w-auto h-7"
-              />
+              <img alt="Marketplace" className="w-auto h-7" src={logo} />
             </button>
           </div>
 
